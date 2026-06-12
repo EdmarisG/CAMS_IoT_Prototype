@@ -1,0 +1,20 @@
+# ARCHIVO DE EXCLUSIONES - CAMS IoT Prototype 
+# Documentacion de que NO incluir en backups 
+ 
+ARCHIVOS A EXCLUIR: 
+*.log 
+*.db 
+*.sqlite 
+sensor_data.db 
+secrets.h 
+.env 
+__pycache__/ 
+venv/ 
+node_modules/ 
+build/ 
+*.elf 
+*.bin 
+.DS_Store 
+Thumbs.db 
+ 
+Ver archivo completo en GitHub 

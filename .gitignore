@@ -1,0 +1,18 @@
+# Archivos a ignorar en Git 
+*.log 
+*.tmp 
+*.db 
+*.sqlite 
+sensor_data.db 
+secrets.h 
+.env 
+.vscode/ 
+.idea/ 
+__pycache__/ 
+venv/ 
+node_modules/ 
+build/ 
+*.elf 
+*.bin 
+.DS_Store 
+Thumbs.db 
