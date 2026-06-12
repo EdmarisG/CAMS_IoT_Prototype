@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMS IoT Pressure Monitor</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>CAMS IoT Pressure Monitor</h1>
+        <p class="subtitle">Sistema de Monitoreo de Presion</p>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="card pressure-card">
+                <h2>Presion Actual</h2>
+                <div class="pressure-value">
+                    <span id="current-pressure">--</span>
+                    <span class="unit">cmH2O</span>
+                </div>
+                <p class="pressure-time">Actualizado: <span id="update-time">--</span></p>
+            </div>
+
+            <div class="card alert-card">
+                <h2>Estado</h2>
+                <div class="alert-badge" id="alert-badge">
+                    <span id="alert-text">ESPERANDO</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card full-width">
+                <h2>Historial de Presion</h2>
+                <div class="chart-container">
+                    <canvas id="pressureChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card stat-card">
+                <h3>Minimo</h3>
+                <p class="stat-value" id="stat-min">--</p>
+            </div>
+            <div class="card stat-card">
+                <h3>Maximo</h3>
+                <p class="stat-value" id="stat-max">--</p>
+            </div>
+            <div class="card stat-card">
+                <h3>Promedio</h3>
+                <p class="stat-value" id="stat-avg">--</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card full-width">
+                <h2>Alertas</h2>
+                <div id="alerts-container">
+                    <p>Cargando...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>CAMS IoT v1.0.0</p>
+    </footer>
+
+    <script src="static/dashboard.js"></script>
+</body>
+</html>
